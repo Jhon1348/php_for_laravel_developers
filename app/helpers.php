@@ -25,3 +25,11 @@ function connectDB($config){ //Dependency Injection
     }
 }
 
+function fetchAllTasks($dbh){
+    $statement = $dbh->prepare('SELECT * FROM tasks;');
+
+    $statement->execute();
+
+    return  $statement->fetchAll(PDO::FETCH_CLASS,'Task');
+}
+
