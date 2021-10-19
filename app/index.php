@@ -3,15 +3,18 @@
 require 'app/helpers.php';
 require 'app/Task.php';
 
-//nova tasca
-//$task = new Task(1,'comprar pa','a la panaderia',0);
-//var_dump($task);
+require 'config.php';
 
-$user = 'debian-sys-maint';
-$pass = '0FoECsMAe1KzaXIU';
+//$user = 'debian-sys-maint';
+//$pass = '0FoECsMAe1KzaXIU';
+//$dsn ='mysql:host=localhost;dbname=phplaraveldevs';
+
 
 try{
-    $dbh =new PDO('mysql:host=localhost;dbname=phplaraveldevs',$user,$pass);
+    $dbh =new PDO(
+        $config['database']['databasetype'] . ":host=" . $config['database']['host'] . ";dbname=" . $config['database']['name'],
+        $config['database']['user'],
+        $config['database']['password']);
 
 }catch (\Exception $e){
     echo 'Error de connexió a la base de dades';
