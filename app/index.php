@@ -21,10 +21,9 @@ $statement = $dbh->prepare('SELECT * FROM tasks;');
 
 $statement->execute();
 
-$tasks = $statement->fetch(PDO::FETCH_CLASS,'Task');
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS,'Task');
 
 
-var_dump();
 
 //QUERY STRING
 //var_dump per vore els arrys
