@@ -1,12 +1,12 @@
 <?php
 
-use App\Models\Task;
+
 
 function greet(){
-$name = htmlspecialchars($_GET['name']);
-$surname= $_GET['surname'];
+    $name = htmlspecialchars($_GET['name']);
+    $surname= $_GET['surname'];
 //punt per concatenar
-return "Hola $name $surname!";
+    return "Hola $name $surname!";
 }
 
 function dd($xivato){
@@ -17,11 +17,5 @@ function dd($xivato){
 //API
 
 
-function fetchAllTasks($dbh){
-    $statement = $dbh->prepare('SELECT * FROM tasks;');
 
-    $statement->execute();
-
-    return  $statement->fetchAll(PDO::FETCH_CLASS,Task::class);
-}
 
