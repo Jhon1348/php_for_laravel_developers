@@ -8,6 +8,8 @@ use Framework\Database\Database;
 $dotenv =Dotenv::createImmutable(__DIR__.'/..');
 $dotenv ->load();
 
+
+
 //Laravel service providers
 App::bind('config',require 'config.php');
 App::bind('database', new Database(

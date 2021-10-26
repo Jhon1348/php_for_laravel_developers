@@ -3,7 +3,7 @@
 use Framework\App;
 use Framework\Database\Database;
 
-require 'app/helpers.php';
+
 //require 'app/Models/Task.php';
 //require 'framework/Database/Database.php';
 //require 'framework/Database/Connection.php';
