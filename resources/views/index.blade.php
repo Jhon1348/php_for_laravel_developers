@@ -8,17 +8,31 @@
     <title>Document</title>
     <style>
         header{
-            background: beige;
+            background: yellow;
             padding: 2em;
             text-align: center ;
+            margin-left: 10em;
+            margin-right: 10em;
         }
     </style>
 </head>
 <body>
+
+<nav>
+    <ul>
+        <li><a href="/tasks.html">Tasques</a></li>
+        <li><a href="/users.html">Users</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="index.php">Home</a></li>
+    </ul>
+</nav>
+
 <header>
+
     <h1><?=$greeting;?></h1>
 
-    <table>
+    <table border=1px solid black>
         <tr>
             <th>Id</th>
             <th>Title</th>
