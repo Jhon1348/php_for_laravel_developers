@@ -1,36 +1,21 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        header{
-            background: yellow;
-            padding: 2em;
-            text-align: center ;
-            margin-left: 10em;
-            margin-right: 10em;
-        }
-    </style>
-</head>
-<body>
 
-<nav>
-    <ul>
-        <li><a href="/tasks">Tasques</a></li>
-        <li><a href="/users">Users</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/index">Home</a></li>
-    </ul>
-</nav>
+<?php require '../resources/views/layout/html_header.blade.php' ?>
 
-<header>
-    TODO CONTACT HERE
+<?php require '../resources/views/layout/nav.blade.php' ?>
 
-</header>
-</body>
-</html>
+<div class="min-h-full">
+    <div class="py-10">
+        <header>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold leading-tight text-gray-900">
+                    ABOUT
+                </h1>
+            </div>
+        </header>
+        <main>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab architecto at, et molestiae nemo nihil quae unde velit. Ad amet consequuntur debitis eius ipsum iure iusto qui! Ea, sequi!
+        </main>
+    </div>
+</div>
+
+<?php require '../resources/views/layout/footer.blade.php' ?>
