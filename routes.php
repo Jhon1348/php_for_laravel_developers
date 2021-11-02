@@ -7,5 +7,6 @@ return [
     '/tasks' =>'../app/Http/Controllers/index.php',
     '/' =>'../app/Http/Controllers/index.php',
     '/index.php' =>'../app/Http/Controllers/index.php',
-    '/index' =>'../app/Http/Controllers/index.php'
+    '/index' =>'../app/Http/Controllers/index.php',
+    '/users' =>'../app/Http/Controllers/users.php'
 ];
