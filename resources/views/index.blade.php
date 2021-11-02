@@ -12,7 +12,6 @@
         </header>
         <main>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="mt-5 mb-5"><?=$greeting;?></h1>
 
             <!-- This example requires Tailwind CSS v2.0+ -->
             <div class="flex flex-col">
