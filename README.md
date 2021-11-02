@@ -1,3 +1,9 @@
+#Aplicació final
+
+podeu veure el resultat d'aquesta aplicació a:
+
+http://phpforlaravel.jhonmoreno.codes
+
 # php_for_laravel_developers
 
 Codi font del screencast:
